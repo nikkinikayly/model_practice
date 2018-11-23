@@ -1,0 +1,9 @@
+<h1>Models#index</h1>
+<p>Find me in app/views/models/index.html.erb</p>
+<% @models.each do |model| %>
+
+    <%= link_to 'Show Models', model_path(model) %>
+    <%= link_to 'New Model', new_model_path %>
+    <%= link_to 'Edit Model', edit_page_path(model) %>
+    <%= link_to 'Delete Model', model, method: :delete %>
+<% end %>
